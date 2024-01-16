@@ -1,0 +1,188 @@
+.banner {
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Ensure the image is behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    /* Ensure the content is above the image */
+    color: white; /* Set text color to white for better visibility */
+}
+
+#mamun{
+    display:flex;
+    gap: 24px;
+}
+
+h1, p, div {
+    
+    /* Add a semi-transparent black background to improve text visibility */
+    padding: 20px;
+    /* Add padding for better readability */
+
+}
+
+
+
+.after-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the desired height */
+}
+
+.linear-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+
+.image-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-1{
+    display: flex;
+}
+.nav-2{
+    display: flex;
+}
+
+.mobile-menu {
+    display: none;
+  }
+
+
+
+.row-1{
+    display: flex;
+    gap: 1px;
+}
+
+
+.row-2{
+    display: flex;
+    gap: 1px;
+}
+
+.row-3{
+    display: flex;
+    gap: 1px;
+}
+
+.item {
+            position: relative;
+            overflow: hidden;
+        }
+
+.item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+.item p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            margin: 0;
+            text-align: center;
+            width: 80%; /* Adjust the width as needed */
+        }
+
+ .why-choose-us{
+    text-align: center;
+ }
+ 
+ .hotel-services{
+    display: flex;
+    justify-content: center;
+ }
+ .best-price{
+    display: grid;
+    justify-content: center;
+ }
+ .content1 {
+    display: flex;
+ }
+ .content2 {
+    display: flex;
+ }
+ .footer-1{
+    display: flex;
+ }
+ .footer-main{
+    display: grid;
+    justify-content: center;
+ }
+
+ .footer-main hr {
+    border: 1px solid #ddd; /* Add a border to make the hr visible */
+  }
+@media (max-width: 600px) {
+    #mamun {
+        display:inline; /* Change the display property to 'block' for smaller screens */
+        gap: 10px /* Adjust the gap as needed */
+    }
+
+    .after-banner{
+        display: grid;
+    }
+
+    .grid-container {
+        display: grid; /* Reset the flex property for each item */
+        width: 100%; /* Set the width to 100% for a full-width column */
+    }
+    .row-1{
+        display: grid;
+    }
+    .row-2{
+        display: grid;
+    }
+    .row-3{
+        display: grid;
+    }
+
+    .nav-2{
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+      }
+
+    .content1{
+        display: grid;
+    }
+    .content2{
+        display: grid;
+    } 
+    .hotel-services{
+        display: grid;
+        justify-content: center;
+     }
+}
